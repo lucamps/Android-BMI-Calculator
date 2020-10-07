@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="75dp"
+        android:text="@string/name"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/textColor"
+        android:padding="1dp"/>
+
+    <EditText
+        android:id="@+id/editTextPersonName"
+        android:layout_width="500sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewName"
+        android:layout_alignStart="@id/textViewName"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="3dp"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/textColor"
+        android:padding="@dimen/editTextPadding"
+        android:inputType="textPersonName"
+        android:background="@android:drawable/editbox_dropdown_light_frame" />
+
+    <TextView
+        android:id="@+id/textViewAge"
+        android:text="@string/age"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/textColor"
+        android:padding="1dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextPersonName"
+        android:layout_alignStart="@id/editTextPersonName"
+        android:layout_marginTop="30dp"
+         />
+
+    <EditText
+        android:id="@+id/editTextAge"
+        android:layout_width="70sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewAge"
+        android:layout_alignStart="@id/textViewAge"
+        android:layout_marginTop="3dp"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/textColor"
+        android:padding="@dimen/editTextPadding"
+        android:inputType="numberDecimal"
+        android:background="@android:drawable/editbox_dropdown_light_frame" />
+
+    <TextView
+        android:id="@+id/textViewWeight"
+        android:text="@string/weight"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/textColor"
+        android:padding="1dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/textViewAge"
+        android:layout_marginStart="60dp"
+        android:layout_below="@id/editTextPersonName"
+        android:layout_marginTop="30dp"
+        />
+
+    <EditText
+        android:id="@+id/editTextWeight"
+        android:layout_width="110sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewWeight"
+        android:layout_alignStart="@id/textViewWeight"
+        android:layout_marginTop="3dp"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/textColor"
+        android:padding="@dimen/editTextPadding"
+        android:inputType="numberDecimal"
+        android:background="@android:drawable/editbox_dropdown_light_frame" />
+
+    <TextView
+        android:id="@+id/textViewHeight"
+        android:text="@string/height"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/textColor"
+        android:padding="1dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_toEndOf="@id/textViewWeight"
+        android:layout_below="@id/editTextPersonName"
+        android:layout_marginTop="30dp"
+        />
+
+    <EditText
+        android:id="@+id/editTextHeight"
+        android:layout_width="60sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewHeight"
+        android:layout_alignStart="@id/textViewHeight"
+        android:layout_alignEnd="@id/editTextPersonName"
+        android:layout_marginTop="3dp"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/textColor"
+        android:padding="@dimen/editTextPadding"
+        android:inputType="numberDecimal"
+        android:background="@android:drawable/editbox_dropdown_light_frame" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/editTextWeight"
+        android:layout_marginTop="80dp"
+        android:text="@string/nutriReport" />
+
+
+</RelativeLayout>
