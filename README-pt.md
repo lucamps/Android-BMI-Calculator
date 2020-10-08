@@ -1,5 +1,5 @@
 # Android-IMC-Calculator 
-### Idioma do README ([en](README.md)/pt)
+### Idioma do README ([en](../..#android-bmi-calculator)/pt)
 
 Segundo projeto prático da disciplina INF-311 (Programação para Dispositivos Móveis), na Universidade Federal de Viçosa (UFV).
 
