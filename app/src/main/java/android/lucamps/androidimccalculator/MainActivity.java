@@ -2,6 +2,7 @@ package android.lucamps.androidimccalculator;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -67,6 +68,17 @@ public class MainActivity extends AppCompatActivity {
                 setResultText();
                 Log.i("Result Number", String.valueOf(resultNumber));
                 Log.i("Result Text", resultText);
+
+                Intent it = new Intent(getBaseContext(),SecondActivity.class);
+                it.putExtra("name",name);
+                it.putExtra("age",age);
+                it.putExtra("weight",weight);
+                it.putExtra("height",height);
+                it.putExtra("resultNumber",resultNumber);
+                it.putExtra("resultText",resultText);
+
+                startActivity(it);
+
             }
         });
     }

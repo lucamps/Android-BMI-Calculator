@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Calculadora IMC</string>
+
+    <!-- Common strings -->
+    <string name="name">Nome:</string>
+    <string name="age">Idade:</string>
+    <string name="weight">Peso:</string>
+    <string name="weightKG">Peso (kg):</string>
+    <string name="height">Altura:</string>
+    <string name="heightM">Altura (m):</string>
+    <string name="nutriReport">Relatório Nutricional</string>
+    <string name="BMI">IMC:</string>
+    <string name="rating">Classificação:</string>
+    <string name="undefined">indefinido</string>
+
+    <!-- BMI result texts -->
+    <string name="underW">Abaixo do Peso</string>
+    <string name="healthy">Saudável</string>
+    <string name="overW">Sobrepeso</string>
+    <string name="obesityI">Obesidade Grau I</string>
+    <string name="obesityII">Obesidade Grau II (severa)</string>
+    <string name="obesityIII">Obesidade Grau III (mórbida)</string>
+
+
+</resources>
