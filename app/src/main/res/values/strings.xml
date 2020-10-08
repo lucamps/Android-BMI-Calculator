@@ -21,6 +21,7 @@
     <string name="obesityI">Class I obesity </string>
     <string name="obesityII">Class II obesity (severe)</string>
     <string name="obesityIII">Class III obesity (morbid)</string>
+    <string name="recalculate">Recalculate</string>
 
 
 </resources>

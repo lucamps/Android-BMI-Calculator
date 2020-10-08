@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Calculadora IMC</string>
 
-    <!-- Common strings -->
+    <!-- Strings comuns-->
     <string name="name">Nome:</string>
     <string name="age">Idade:</string>
     <string name="weight">Peso:</string>
@@ -14,13 +14,14 @@
     <string name="undefined">indefinido</string>
     <string name="years">anos</string>
 
-    <!-- BMI result texts -->
+    <!-- textos do resultado do IMC -->
     <string name="underW">Abaixo do Peso</string>
     <string name="healthy">Saudável</string>
     <string name="overW">Sobrepeso</string>
     <string name="obesityI">Obesidade Grau I</string>
     <string name="obesityII">Obesidade Grau II (severa)</string>
     <string name="obesityIII">Obesidade Grau III (mórbida)</string>
+    <string name="recalculate">Realizar Novo Cálculo</string>
 
 
 </resources>

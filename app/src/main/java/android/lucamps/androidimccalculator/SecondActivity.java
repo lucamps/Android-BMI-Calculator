@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 import java.text.DecimalFormat;
 
@@ -60,6 +62,7 @@ public class SecondActivity extends AppCompatActivity {
         final TextView height = findViewById(R.id.textHeight);
         final TextView BMI = findViewById(R.id.textBMI);
         final TextView rating = findViewById(R.id.textRating);
+        final Button recalculate_bt = findViewById(R.id.recalculate_bt);
 
         name.setText(it.getStringExtra("name"));
         age.setText(new DecimalFormat("##0.##").format(it.getDoubleExtra("age",0)) + " " + getText(R.string.years));
@@ -68,6 +71,14 @@ public class SecondActivity extends AppCompatActivity {
         BMI.setText(new DecimalFormat("##0.00").format(it.getDoubleExtra("resultNumber",0)) + " Kg/m²");
         rating.setText(it.getStringExtra("resultText"));
 
-
+        recalculate_bt.setOnClickListener(new Button.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                Intent it2 = new Intent(getBaseContext(), MainActivity.class);
+                it2.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
+                startActivity(it2);
+                finish();
+            }
+        });
     }
 }

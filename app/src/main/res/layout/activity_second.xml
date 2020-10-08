@@ -150,4 +150,14 @@
         android:layout_marginStart="45dp"
         android:layout_marginTop="20dp"
         android:textSize="@dimen/textSize"/>
+
+    <Button
+        android:id="@+id/recalculate_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textRating"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="80dp"
+        android:text="@string/recalculate" />
 </RelativeLayout>
