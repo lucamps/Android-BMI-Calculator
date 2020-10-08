@@ -58,7 +58,7 @@
 
     <TextView
         android:id="@+id/textViewWeight"
-        android:text="@string/weight"
+        android:text="@string/weightKG"
         android:textSize="@dimen/textSize"
         android:textColor="@color/textColor"
         android:padding="1dp"
@@ -85,7 +85,7 @@
 
     <TextView
         android:id="@+id/textViewHeight"
-        android:text="@string/height"
+        android:text="@string/heightM"
         android:textSize="@dimen/textSize"
         android:textColor="@color/textColor"
         android:padding="1dp"

@@ -1,12 +1,17 @@
 <resources>
     <string name="app_name">BMI Calculator</string>
 
-    <!-- Main Activity (first screen) -->
+    <!-- Common strings -->
     <string name="name">Name:</string>
     <string name="age">Age:</string>
-    <string name="weight">Weight (kg):</string>
-    <string name="height">Height (m):</string>
+    <string name="weight">Weight:</string>
+    <string name="weightKG">Weight (kg):</string>
+    <string name="height">Height:</string>
+    <string name="heightM">Height (m):</string>
     <string name="nutriReport">Nutritional Report</string>
+    <string name="BMI">BMI:</string>
+    <string name="rating">Rating:</string>
+    <string name="undefined">undefined</string>
 
     <!-- BMI result texts -->
     <string name="underW">Underweight</string>
@@ -15,7 +20,6 @@
     <string name="obesityI">Class I obesity </string>
     <string name="obesityII">Class II obesity (severe)</string>
     <string name="obesityIII">Class III obesity (morbid)</string>
-
 
 
 </resources>
