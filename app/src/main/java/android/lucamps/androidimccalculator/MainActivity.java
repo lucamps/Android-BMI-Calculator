@@ -41,7 +41,9 @@ public class MainActivity extends AppCompatActivity {
 
     static double textToDouble(final EditText text){
         String temp = text.getText().toString().replace(",",".");
-        return Double.parseDouble(temp);
+        if (!temp.equals(""))
+            return Double.parseDouble(temp);
+        return 0;
     }
 
     //Life cycle methods
@@ -98,18 +100,20 @@ public class MainActivity extends AppCompatActivity {
                 weight = textToDouble(weightText);
                 height = textToDouble(heightText);
 
-                setResultNumber();
-                setResultText();
+                if (height > 0 && weight > 0 ) {
+                    setResultNumber();
+                    setResultText();
 
-                Intent it = new Intent(getBaseContext(),SecondActivity.class);
-                it.putExtra("name",name);
-                it.putExtra("age",age);
-                it.putExtra("weight",weight);
-                it.putExtra("height",height);
-                it.putExtra("resultNumber",resultNumber);
-                it.putExtra("resultText",resultText);
+                    Intent it = new Intent(getBaseContext(), SecondActivity.class);
+                    it.putExtra("name", name);
+                    it.putExtra("age", age);
+                    it.putExtra("weight", weight);
+                    it.putExtra("height", height);
+                    it.putExtra("resultNumber", resultNumber);
+                    it.putExtra("resultText", resultText);
 
-                startActivity(it);
+                    startActivity(it);
+                }
             }
         });
     }
