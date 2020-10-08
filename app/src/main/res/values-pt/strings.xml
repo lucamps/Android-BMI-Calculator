@@ -12,6 +12,7 @@
     <string name="BMI">IMC:</string>
     <string name="rating">Classificação:</string>
     <string name="undefined">indefinido</string>
+    <string name="years">anos</string>
 
     <!-- BMI result texts -->
     <string name="underW">Abaixo do Peso</string>

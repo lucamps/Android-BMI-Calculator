@@ -12,6 +12,7 @@
     <string name="BMI">BMI:</string>
     <string name="rating">Rating:</string>
     <string name="undefined">undefined</string>
+    <string name="years">years</string>
 
     <!-- BMI result texts -->
     <string name="underW">Underweight</string>

@@ -24,10 +24,10 @@ public class SecondActivity extends AppCompatActivity {
         final TextView rating = findViewById(R.id.textRating);
 
         name.setText(it.getStringExtra("name"));
-        age.setText(new DecimalFormat("##0.##").format(it.getDoubleExtra("age",0)));
-        weight.setText(new DecimalFormat("##0.##").format(it.getDoubleExtra("weight",0)));
-        height.setText(new DecimalFormat("##0.##").format(it.getDoubleExtra("height",0)));
-        BMI.setText(new DecimalFormat("##0.##").format(it.getDoubleExtra("resultNumber",0)));
+        age.setText(new DecimalFormat("##0.##").format(it.getDoubleExtra("age",0)) + " " + getText(R.string.years));
+        weight.setText(new DecimalFormat("##0.##").format(it.getDoubleExtra("weight",0)) + " Kg");
+        height.setText(new DecimalFormat("##0.00").format(it.getDoubleExtra("height",0)) + " m");
+        BMI.setText(new DecimalFormat("##0.00").format(it.getDoubleExtra("resultNumber",0)) + " Kg/m²");
         rating.setText(it.getStringExtra("resultText"));
 
 
