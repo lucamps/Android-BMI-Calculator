@@ -44,36 +44,32 @@ public class MainActivity extends AppCompatActivity {
         return Double.parseDouble(temp);
     }
 
+    //Life cycle methods
     @Override
     protected void onStart() {
         super.onStart();
         Log.i("LIFE_CYCLE","MAIN --- onStart");
     }
-
     @Override
     protected void onPause() {
         super.onPause();
         Log.i("LIFE_CYCLE","MAIN --- onPause");
     }
-
     @Override
     protected void onStop() {
         super.onStop();
         Log.i("LIFE_CYCLE","MAIN --- onStop");
     }
-
     @Override
     protected void onRestart() {
         super.onRestart();
         Log.i("LIFE_CYCLE","MAIN --- onRestart");
     }
-
     @Override
     protected void onResume() {
         super.onResume();
         Log.i("LIFE_CYCLE","MAIN --- onResume");
     }
-
     @Override
     protected void onDestroy() {
         super.onDestroy();
@@ -91,9 +87,9 @@ public class MainActivity extends AppCompatActivity {
         final EditText ageText = findViewById(R.id.editTextAge);
         final EditText weightText = findViewById(R.id.editTextWeight);
         final EditText heightText = findViewById(R.id.editTextHeight);
-
         final Button resultBT = findViewById(R.id.button1);
 
+        //Button to calculate BMI
         resultBT.setOnClickListener(new Button.OnClickListener(){
             @Override
             public void onClick(View view) {

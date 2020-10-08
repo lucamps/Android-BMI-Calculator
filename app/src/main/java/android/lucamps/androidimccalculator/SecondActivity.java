@@ -12,36 +12,32 @@ import java.text.DecimalFormat;
 
 public class SecondActivity extends AppCompatActivity {
 
+    //Life cycle methods
     @Override
     protected void onStart() {
         super.onStart();
         Log.i("LIFE_CYCLE","SECOND --- onStart");
     }
-
     @Override
     protected void onPause() {
         super.onPause();
         Log.i("LIFE_CYCLE","SECOND --- onPause");
     }
-
     @Override
     protected void onStop() {
         super.onStop();
         Log.i("LIFE_CYCLE","SECOND --- onStop");
     }
-
     @Override
     protected void onRestart() {
         super.onRestart();
         Log.i("LIFE_CYCLE","SECOND --- onRestart");
     }
-
     @Override
     protected void onResume() {
         super.onResume();
         Log.i("LIFE_CYCLE","SECOND --- onResume");
     }
-
     @Override
     protected void onDestroy() {
         super.onDestroy();
@@ -64,13 +60,19 @@ public class SecondActivity extends AppCompatActivity {
         final TextView rating = findViewById(R.id.textRating);
         final Button recalculate_bt = findViewById(R.id.recalculate_bt);
 
+        //Setting the result texts
         name.setText(it.getStringExtra("name"));
-        age.setText(new DecimalFormat("##0.##").format(it.getDoubleExtra("age",0)) + " " + getText(R.string.years));
-        weight.setText(new DecimalFormat("##0.##").format(it.getDoubleExtra("weight",0)) + " Kg");
-        height.setText(new DecimalFormat("##0.00").format(it.getDoubleExtra("height",0)) + " m");
-        BMI.setText(new DecimalFormat("##0.00").format(it.getDoubleExtra("resultNumber",0)) + " Kg/m²");
+        String temp = new DecimalFormat("##0.##").format(it.getDoubleExtra("age",0)) + " " + getText(R.string.years);
+        age.setText(temp);
+        temp = new DecimalFormat("##0.##").format(it.getDoubleExtra("weight",0)) + " Kg";
+        weight.setText(temp);
+        temp = new DecimalFormat("##0.00").format(it.getDoubleExtra("height",0)) + " m";
+        height.setText(temp);
+        temp = new DecimalFormat("##0.00").format(it.getDoubleExtra("resultNumber",0)) + " Kg/m²";
+        BMI.setText(temp);
         rating.setText(it.getStringExtra("resultText"));
 
+        //Button to return on main screen
         recalculate_bt.setOnClickListener(new Button.OnClickListener(){
             @Override
             public void onClick(View view) {
